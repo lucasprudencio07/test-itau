@@ -1,5 +1,6 @@
 Feature: Automate some tests on the iCarros site
 
+  @this
   Scenario: Create a list that will return at least 3 cars
     Given I am on the home page
     When I select the brand and the car model

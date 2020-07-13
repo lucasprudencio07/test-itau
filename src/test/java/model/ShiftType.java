@@ -1,6 +1,18 @@
-package java.model;
+package model;
 
 public enum ShiftType {
 
-    MANUAL, AUTOMATIC
+    MANUAL("MANUAL"),
+    AUTOMATIC("AUTOMATIC");
+
+    private String shiftType;
+
+    ShiftType(String shiftType) {
+        this.shiftType = shiftType;
+    }
+
+    public String getShiftType() {
+        return shiftType;
+    }
+
 }

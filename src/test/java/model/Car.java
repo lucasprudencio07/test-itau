@@ -1,6 +1,4 @@
-package java.model;
-
-import java.math.BigDecimal;
+package model;
 
 public class Car {
 
@@ -10,8 +8,18 @@ public class Car {
     private Integer mileage;
     private String color;
     private ShiftType shiftType;
-    private BigDecimal vehiclePrice;
+    private Integer vehiclePrice;
 
+    // Constructor
+    public Car(String brand, String model, Integer year, Integer mileage, String color, ShiftType shiftType, Integer vehiclePrice) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+        this.mileage = mileage;
+        this.color = color;
+        this.shiftType = shiftType;
+        this.vehiclePrice = vehiclePrice;
+    }
 
     // Getter & Setter
     public String getBrand() {
@@ -62,11 +70,11 @@ public class Car {
         this.shiftType = shiftType;
     }
 
-    public BigDecimal getVehiclePrice() {
+    public Integer getVehiclePrice() {
         return vehiclePrice;
     }
 
-    public void setVehiclePrice(BigDecimal vehiclePrice) {
+    public void setVehiclePrice(Integer vehiclePrice) {
         this.vehiclePrice = vehiclePrice;
     }
 }
