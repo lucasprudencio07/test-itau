@@ -14,8 +14,8 @@ public class CsvWriter {
 
         CSVWriter csvWriter = new CSVWriter(new FileWriter(System.getProperty("user.dir") + "//src//test//resources//csv//dataFile.csv"));
 
-//        String[] csvHeader = {"Brand", "Model", "Year", "Mileage", "Color", "Shift Type", "Price"};
-//        csvWriter.writeNext(csvHeader);
+        String[] csvHeader = {"Brand", "Model", "Year", "Mileage", "Color", "Shift Type", "Price"};
+        csvWriter.writeNext(csvHeader);
 
         for (Car car : carList) {
 

@@ -118,6 +118,8 @@ public class HomepageTests extends BaseTests {
 
             BufferedReader bufferedReader = new BufferedReader(new FileReader(csvFilePath));
 
+            bufferedReader.readLine();
+
             while ((line = bufferedReader.readLine()) != null && counter < 20) {
 
                 String[] car = line.split(",");

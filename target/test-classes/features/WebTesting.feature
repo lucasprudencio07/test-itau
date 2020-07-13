@@ -13,9 +13,9 @@ Feature: Automate some tests on the iCarros site
     Then the price will be <price> of an <model> on the position <index>
 
     Examples:
-      | index |                   model                 |     price       |
-      |   0   | "Ecosport SE 1.5 (Aut) (Flex)"          | "R$ 64.890,00"  |
-      |   1   | "EcoSport SE Direct 1.5 (Aut) (Flex)"   | "R$ 64.900,00"  |
+      | index |                     model                 |     price       |
+      |   0   | "Ford EcoSport Titanium 1.5 (Aut) (Flex)" |     82790       |
+      |   1   | "Ford EcoSport SE 1.5 (Aut) (Flex)"       |     63900       |
 
 
   Scenario: Read the entire list and save in a file with the necessary data
