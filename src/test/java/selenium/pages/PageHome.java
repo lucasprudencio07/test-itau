@@ -34,8 +34,17 @@ public class PageHome {
 
         waitElement(chromeDriver);
 
+        Thread.sleep(5000);
+        chromeDriver.findElement(By.id("anunciosNovos")).click();
+
         chromeDriver.findElement(By.cssSelector("div.col-xs-4 button.button--large")).click();
         Thread.sleep(5000);
+
+        chromeDriver.findElement(By.xpath("//ul[@id='ftr_ul_cidade']//a[@id='9625_1_0']//input[1]")).click();
+        Thread.sleep(3000);
+
+        chromeDriver.findElement(By.cssSelector("div.filtros ul.tab-square li.primeiro")).click();
+        Thread.sleep(3000);
 
         chromeDriver.findElement(By.xpath("//a[@id='15']")).click();
         Thread.sleep(3000);
@@ -43,8 +52,8 @@ public class PageHome {
         chromeDriver.findElement(By.xpath("//a[@id='607']")).click();
         Thread.sleep(3000);
 
-        chromeDriver.findElement(By.xpath("//ul[@id='ftr_ul_0km_/_seminovo']//a[@id='1']")).click();
-        Thread.sleep(3000);
+//        chromeDriver.findElement(By.xpath("//ul[@id='ftr_ul_0km_/_seminovo']//a[@id='1']")).click();
+//        Thread.sleep(3000);
 
         return new PageFilteredSearch(chromeDriver);
     }
